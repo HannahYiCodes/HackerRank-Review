@@ -26,6 +26,14 @@ public class DataTypes {
 
         /* Concatenate and print the String variables on a new line;
         	the 's' variable above should be printed first. */
+        int i_input = scan.nextInt();
+        double d_input = scan.nextDouble();
+        scan.nextLine();
+        String s_input = scan.nextLine();
+
+        System.out.println(i + i_input);
+        System.out.println(d + d_input);
+        System.out.println(s + s_input);
 
         scan.close();
     }
