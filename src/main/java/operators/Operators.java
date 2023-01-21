@@ -24,7 +24,12 @@ public class Operators {
 
     public static void solve(double meal_cost, int tip_percent, int tax_percent) {
         // Write your code here
+        double final_tip = (tip_percent * .01) * meal_cost;
+        double final_tax_percent = (tax_percent * .01) * meal_cost;
+        double final_cost = meal_cost + final_tip + final_tax_percent;
 
+        long rounded_cost = Math.round(final_cost*100)/100;
+        System.out.println(rounded_cost);
     }
 
 }
